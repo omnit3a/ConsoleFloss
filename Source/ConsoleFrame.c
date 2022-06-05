@@ -52,3 +52,20 @@ int getIntegerInput(int bufferLength){
 	char str[bufferLength];
 	return strtol(fgets(str,bufferLength,stdin),&strOff,10);
 }
+
+/**
+ *	Prints the string passed as a parameter, concatenated with a new line
+ *	character.
+ */
+void printWln(char * content){
+	printf(content);
+	printf("\n");
+}
+
+/**
+ *	Prints the string passed as a parameter.
+ */
+void printNln(char * content){
+	printf(content);
+}
+
