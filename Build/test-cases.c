@@ -25,8 +25,11 @@ int main(){
 	/*------------------------------*/
 
 	printWln("With Newline");	//tests to see if the specialized print statements work
-	printNln("Without Newline");	//
-
+	printNln("Without Newline");	//**with literals**
+	char * testString = "Hello";	//
+	printWln(testString);		//**with variables**
+	printNln(testString);		//
+					
 	return 0;
 
 }
