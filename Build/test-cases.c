@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include "ConsoleFrame.h"
 #include "ConsoleColor.h"
+#include "ConsoleProgress.h"
 
 int main(){
 
@@ -37,6 +38,15 @@ int main(){
 	printWln("Red");		//
 	resetColor();			//
 
+	/*-----------------------------*/
+	
+	printf("%f\n",percentOf(10,100));	//tests to see if the ConsoleProgress library is working
+	printf("%f\n",percentOf(10,99));	//first, tests to see if the "percentOf" function works
+	printf("%f\n",percentOf(433,865));	//
+	drawProgressBar("Out of 100",percentOf(11,100));	//second, tests to see if the "drawProgressBar" function works
+	drawProgressBar("Out of 99",percentOf(10,99));		//
+	drawProgressBar("Out of 865",percentOf(433,865));	//
+	
 	return 0;
 
 }
