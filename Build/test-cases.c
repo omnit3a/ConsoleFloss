@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "ConsoleFrame.h"
+#include "ConsoleColor.h"
 
 int main(){
 
@@ -29,7 +30,13 @@ int main(){
 	char * testString = "Hello";	//
 	printWln(testString);		//**with variables**
 	printNln(testString);		//
-					
+	
+	/*------------------------------*/
+
+	printf(BRED);			//tests to see if the the ConsoleColor library is working
+	printWln("Red");		//
+	resetColor();			//
+
 	return 0;
 
 }
