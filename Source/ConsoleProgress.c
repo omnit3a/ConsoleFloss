@@ -19,11 +19,13 @@ void drawProgressBar(char * status, float value){
 	int progress = lround(value)/10;
 	printf("%s [",status);
 	int spot = 0;
-	for (spot = 0 ; spot < progress ; spot++){
-		printf("#");
-	}
-	for (spot = spot ; spot < 10 ; spot++){
-		printf("-");
+	while (spot < 10){
+		if (spot < progress) {
+		       	printf("#");
+	       	} else {
+		  	printf("-");
+	       	}
+		spot++;
 	}
 	printf("]\n");
 }
