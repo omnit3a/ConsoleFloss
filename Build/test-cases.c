@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "ConsoleFrame.h"
+#include "ConsoleColor.h"
 
 int main(){
 
@@ -25,7 +26,16 @@ int main(){
 	/*------------------------------*/
 
 	printWln("With Newline");	//tests to see if the specialized print statements work
-	printNln("Without Newline");	//
+	printNln("Without Newline");	//**with literals**
+	char * testString = "Hello";	//
+	printWln(testString);		//**with variables**
+	printNln(testString);		//
+	
+	/*------------------------------*/
+
+	printf(BRED);			//tests to see if the the ConsoleColor library is working
+	printWln("Red");		//
+	resetColor();			//
 
 	return 0;
 
