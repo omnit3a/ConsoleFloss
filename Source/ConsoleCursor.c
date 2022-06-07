@@ -8,3 +8,7 @@
 void moveCursor(char * direction){
 	printf(direction);
 }
+
+void gotoHome(){
+	printf("\e[H");
+}

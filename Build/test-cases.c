@@ -50,10 +50,10 @@ int main(){
 
 	/*-----------------------------*/
 
-	getStringInput(16);
-	moveCursor(UP);
-	moveCursor(PREVIOUS);
-	drawProgressBar("Out of 100",percentOf(20,100));
+	getStringInput(16);		//test out various ConsoleCursor functions
+	moveCursor(UP);			//
+	moveCursor(PREVIOUS);		//
+	drawProgressBar("Out of 100",percentOf(20,100)); //
 
 	return 0;
 

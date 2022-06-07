@@ -10,4 +10,6 @@
 
 void moveCursor(char * direction);
 
+void gotoHome();
+
 #endif
