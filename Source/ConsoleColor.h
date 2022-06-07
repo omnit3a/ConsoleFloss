@@ -21,4 +21,6 @@
 
 void resetColor();
 
+void setColor(char * color);
+
 #endif
