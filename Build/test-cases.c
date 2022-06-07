@@ -3,6 +3,7 @@
 #include "ConsoleFrame.h"
 #include "ConsoleColor.h"
 #include "ConsoleProgress.h"
+#include "ConsoleCursor.h"
 
 int main(){
 
@@ -46,7 +47,14 @@ int main(){
 	drawProgressBar("Out of 100",percentOf(11,100));	//second, tests to see if the "drawProgressBar" function works
 	drawProgressBar("Out of 99",percentOf(10,99));		//
 	drawProgressBar("Out of 865",percentOf(433,865));	//
-	
+
+	/*-----------------------------*/
+
+	getStringInput(16);
+	moveCursor(UP);
+	moveCursor(PREVIOUS);
+	drawProgressBar("Out of 100",percentOf(20,100));
+
 	return 0;
 
 }
