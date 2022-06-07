@@ -34,7 +34,7 @@ int main(){
 	
 	/*------------------------------*/
 
-	printf(B_RED);			//tests to see if the the ConsoleColor library is working
+	setColor(B_RED);		//tests to see if the the ConsoleColor library is working
 	printWln("Red");		//
 	resetColor();			//
 
