@@ -3,7 +3,7 @@
 
 char getOS();
 
-void clearLog(char os);
+void clearTerminal();
 
 char * getStringInput(int bufferLength);
 

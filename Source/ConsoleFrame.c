@@ -27,7 +27,8 @@ char getOS(){
 /**
  *	Clears the terminal in different ways depending on the host operating system.
  */
-void clearLog(char os){
+void clearTerminal(){
+	char os = getOS();
 	if (os=='W') { system("cls"); }
 	if (os=='M'||os=='L'||os=='B') { system("clear"); }
 }
@@ -58,8 +59,7 @@ int getIntegerInput(int bufferLength){
  *	character.
  */
 void printWln(char * content){
-	printf(content);
-	printf("\n");
+	printf("%s\n",content);
 }
 
 /**
