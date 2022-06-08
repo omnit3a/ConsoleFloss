@@ -58,8 +58,7 @@ int getIntegerInput(int bufferLength){
  *	character.
  */
 void printWln(char * content){
-	printf(content);
-	printf("\n");
+	printf("%s\n",content);
 }
 
 /**
