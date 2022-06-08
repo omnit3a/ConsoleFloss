@@ -4,5 +4,4 @@ A zero dependency, cross platform C console utility library. The goal of Console
 - [X] Color capablities
 - [X] Progress bar capabilites
 - [X] Ability to detect the operating system running a program
-- [ ] Password entry functions
 - [ ] Full documentation of each function
