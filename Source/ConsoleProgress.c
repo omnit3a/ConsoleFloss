@@ -17,15 +17,15 @@ float percentOf(int value, int total){
  */
 void drawProgressBar(char * status, float value){
 	int progress = lround(value)/10;
-	printf("%s [",status);
+	char bar[10] = "----------";		//set bar to be empty
 	int spot = 0;
-	while (spot < 10){
+	while (spot < 10){			//fill bar until needed
 		if (spot < progress) {
-		       	printf("#");
+			bar[spot] = '#';
 	       	} else {
-		  	printf("-");
+			bar[spot] = '-';
 	       	}
 		spot++;
 	}
-	printf("]\n");
+	printf("%s [%s]\n", status, bar);	//print status and bar
 }
